@@ -4,7 +4,7 @@ project( feature-extraction )
 set( CMAKE_BUILD_TYPE "Release" )
 set( CMAKE_CXX_FLAGS "-std=c++11 -O3" )
 
-find_package( OpenCV 3.1 REQUIRED )
+find_package( OpenCV REQUIRED )
 
 include_directories( 
     ${OpenCV_INCLUDE_DIRS} 
