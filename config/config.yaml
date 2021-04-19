@@ -1,0 +1,32 @@
+# TODO: add usage
+
+# what kind of visual odometry?
+# options:
+#   stereo
+# future options:
+#   mono 
+vo_cam_type: stereo
+
+# not currently supported
+using_imu: false
+
+# not currently supported
+using_lidar: false
+
+# camera image planes are coplanar and share x axis
+#  if true, this saves a matrix multiplication 
+basic_stereo_case: true
+
+left_cam_intrinsic: [9.842439e+02, 0.000000e+00, 6.900000e+02, 
+                     0.000000e+00, 9.808141e+02, 2.331966e+02, 
+                     0.000000e+00, 0.000000e+00, 1.000000e+00]
+
+right_cam_intrinsic: [9.895267e+02, 0.000000e+00, 7.020000e+02, 
+                      0.000000e+00, 9.878386e+02, 2.455590e+02, 
+                      0.000000e+00, 0.000000e+00, 1.000000e+00]
+
+right_T_left: [ 9.996878e-01, -8.976826e-03, 2.331651e-02, -5.370000e-01,
+                8.876121e-03,  9.999508e-01, 4.418952e-03,  4.822061e-03,
+               -2.335503e-02, -4.210612e-03, 9.997184e-01, -1.252488e-02]
+
+using_gray_kitti_dataset: true
